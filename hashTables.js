@@ -11,7 +11,21 @@
 		return hash%max;
 	};
 
-	
+	//hash table
+	let hashTable function(){
+		//array to store all the data
+		let storage = [];
+		//number of buckets in the array
+		const storageLimit = 4;
+
+		//utility function to enable us to  display storage itema
+		this.print = function(){
+			console.log(storage)
+		}
+		
+
+
+	}
 
 
 
