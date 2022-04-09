@@ -22,6 +22,29 @@
 		this.print = function(){
 			console.log(storage)
 		}
+
+		//function to add information in the table
+		this.add = function(key, value){
+			//obtain the index by passing it through the hash function
+			var index = hash(key, storageLimit);
+			if(storage[index] === undefined){
+				storage[index] [
+					[key,value]
+				];
+			}else{
+				var inserted = false;
+				for (var i = 0; i < storage[index].length; i++) {
+					if(storage[index][i][0] === key ){
+						storage[index][i][1] =  value;
+						inserted = true;
+					}
+				}
+				if(inserted === false){
+					storage[index].push([key,value]);
+				}
+			}
+		};
+
 		
 
 
