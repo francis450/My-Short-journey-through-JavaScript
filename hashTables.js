@@ -12,7 +12,7 @@
 	};
 
 	//hash table
-	let hashTable function(){
+	let hashTable =  function(){
 		//array to store all the data
 		let storage = [];
 		//number of buckets in the array
@@ -67,7 +67,7 @@
 			}else{
 				for(var i = 0; i < storage[index].length; i++){
 					if(storage[index][i][0] === key){r
-						eturn storage[index][i][1];
+						return storage[index][i][1];
 					}			
 				}
 			}
