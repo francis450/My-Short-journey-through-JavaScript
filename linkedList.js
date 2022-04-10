@@ -9,7 +9,9 @@
 			this.next = null;
 		};
 
-		
+		this.size = function(){
+			return length;
+		}
 	}
 
 
