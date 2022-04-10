@@ -72,13 +72,17 @@
 				}
 			}
 		};
-	}
+	};
 
-	console.log(hash('kamande',10));
+	console.log(hash('ffssddfdsfgsdfgdfg',10));
 
+	let hashi = new hashTable();
+	hashi.add("tux", "penguin");
+	hashi.add("Nicki", "girl");
+	hashi.add("Fathe", "odinare");
+	hashi.add("Kahija", "car");
 
-
-
-
+	console.log(hashi.lookup("Kahija"));
+	hashi.print();
 
 </script>
