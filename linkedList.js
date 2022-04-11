@@ -59,6 +59,22 @@
 			return length === 0;
 		}
 
+		//returns the position of a node in the list
+		this.indexOf = function(index){
+			var currentNode = head;
+			var index = -1;
+
+			while(currentNode){
+				index++;
+				if(currentNode.element === element){
+					return index;
+				}
+				currentNode	= currentNode.next
+			}
+
+			return -1;
+		};
+
 
 	}
 
