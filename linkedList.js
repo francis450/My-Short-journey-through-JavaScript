@@ -75,6 +75,19 @@
 			return -1;
 		};
 
+		//returns the data in the named node
+		this.elementAt = function(index){
+			var currentNode = head;
+			var count = 0;
+
+			while(count < index){
+				count++;
+				currentNode = currentNode.next;
+			}
+			return currentNode.element;
+		};
+
+
 
 	}
 
