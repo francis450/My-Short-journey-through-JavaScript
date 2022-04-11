@@ -54,6 +54,11 @@
 			length--;
 		};
 
+		//this function returns true if the size of the list is zero
+		this.isEmpty = function(){
+			return length === 0;
+		}
+
 
 	}
 
